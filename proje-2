@@ -1,0 +1,13 @@
+def reverse_list(a): 
+    c = list(reversed(a))
+    f=[]
+    for i in range(len(c)):
+        if type(c[i])==list:
+            d=list(reversed(c[i]))
+            f.append(d)
+        else:
+            f.append(c[i])
+    return f
+
+y = eval(input())
+print(reverse_list(y))
